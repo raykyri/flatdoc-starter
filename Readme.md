@@ -151,7 +151,7 @@ their typographically-accurate equivalent. This, of course, does not apply to
 `<code>` and `<pre>` blocks to leave code alone.
 
 > "From a certain point onward there is no longer any turning back. That is the
-> point that must be reached."  
+> point that must be reached."
 > --Franz Kafka
 
 #### Buttons
@@ -219,73 +219,13 @@ $(document).on('flatdoc:ready', function() {
 });
 ```
 
-Full customization
-------------------
-
-You don't have to be restricted to the given theme. Flatdoc is just really one
-`.js` file that expects 2 HTML elements (for *menu* and *content*). Start with
-the blank template and customize as you see fit.
-
-[Get blank template >][template]
-
-``` html
-<html>
-  <head>
-    <script src='jquery.js'></script>
-    <script src='http://rstacruz.github.io/flatdoc/v/0.8.1/flatdoc.js'></script>
-    <!-- Initializer -->
-    <script>
-      Flatdoc.run({
-        fetcher: Flatdoc.github('USER/REPO')
-      });
-    </script>
-  </head>
-
-  <body role='flatdoc'>
-    <div role='flatdoc-menu'></div>
-    <div role='flatdoc-content'></div>
-  </body>
-</html>
-```
-Misc
-====
-
-Inspirations
-------------
-
-The following projects have inspired Flatdoc.
-
- * [Backbone.js] - Jeremy's projects have always adopted this "one page
- documentation" approach which I really love.
-
- * [Docco] - Jeremy's Docco introduced me to the world of literate programming,
- and side-by-side documentation in general.
-
- * [Stripe] - Flatdoc took inspiration on the look of their API documentation.
-
- * [DocumentUp] - This service has the same idea but does a hosted readme 
- parsing approach.
-
-Attributions
-------------
-
-[Photo](http://www.flickr.com/photos/doug88888/2953428679/) taken from Flickr,
-licensed under Creative Commons.
-
-Changelog
----------
-
-#### v0.8.1 - May 26, 2013
-
-First version.
-
 Acknowledgements
 ----------------
 
-© 2013, Rico Sta. Cruz. Released under the [MIT 
+© 2013, Rico Sta. Cruz. Released under the [MIT
 License](http://www.opensource.org/licenses/mit-license.php).
 
-**Flatdoc** is authored and maintained by [Rico Sta. Cruz][rsc] with help from its 
+**Flatdoc** is authored and maintained by [Rico Sta. Cruz][rsc] with help from its
 [contributors][c]. It is sponsored by my startup, [Nadarei, Inc][nd].
 
  * [My website](http://ricostacruz.com) (ricostacruz.com)
