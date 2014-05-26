@@ -1,73 +1,23 @@
 /*
+   Colors
 
-Please don't edit this file directly.
-Instead, edit the stylus (.styl) files and compile it to CSS on your machine.
-
+   link-light: #6EBFD6
+   link: #33AACC
+   link-dark: #0C87AA
+   light: #9090aa
+   extra-light: #dfe2e7
 */
-/* ----------------------------------------------------------------------------
- * Fonts
- */
-@import url("http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300");
+
+@import url("http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400");
+
 /* ----------------------------------------------------------------------------
  * Base
  */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -83,8 +33,7 @@ body {
   color: #000;
   background: #fff;
 }
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 table {
@@ -92,9 +41,7 @@ table {
   border-spacing: 0;
   vertical-align: middle;
 }
-caption,
-th,
-td {
+caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
@@ -102,62 +49,41 @@ td {
 a img {
   border: none;
 }
-html,
-body {
+html, body {
   height: 100%;
 }
 html {
   overflow-x: hidden;
 }
-body,
-td,
-textarea,
-input {
-  font-family: Helvetica Neue, Open Sans, sans-serif;
+body, td, textarea, input {
+  font-family: Open Sans, sans-serif;
   line-height: 1.6;
   font-size: 13px;
   color: #505050;
 }
 @media (max-width: 480px) /* Mobile */ {
-  body,
-  td,
-  textarea,
-  input {
+  body,   td,   textarea,   input {
     font-size: 12px;
   }
 }
 a {
-  color: #2badad;
+  color: #33AACC;
   text-decoration: none;
 }
 a:hover {
-  color: #228a8a;
+  color: #0C87AA;
 }
 /* ----------------------------------------------------------------------------
  * Content styling
  */
-.content p,
-.content ul,
-.content ol,
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6,
-.content pre,
-.content blockquote {
+.content p, .content ul, .content ol, .content h1, .content h2, .content h3,
+.content h4, .content h5, .content h6, .content pre, .content blockquote {
   padding: 10px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -171,8 +97,7 @@ a:hover {
 .content ol > li {
   list-style-type: decimal;
 }
-.content ul,
-.content ol {
+.content ul, .content ol {
   margin-left: 20px;
 }
 .content ul > li {
@@ -198,12 +123,10 @@ a:hover {
 .content li > :first-child {
   padding-top: 0;
 }
-.content strong,
-.content b {
+.content strong, .content b {
   font-weight: bold;
 }
-.content i,
-.content em {
+.content i, .content em {
   font-style: italic;
   color: #9090aa;
 }
@@ -471,14 +394,14 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   font-weight: bold;
   display: inline-block;
   padding: 3px 25px;
-  border: solid 2px #2badad;
+  border: solid 2px #33AACC;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   margin-right: 15px;
 }
 .button,
 .button:visited {
-  background: #2badad;
+  background: #33AACC;
   color: #fff;
   text-shadow: none;
 }
@@ -645,7 +568,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   display: block;
 }
 .header li a:hover {
-  color: #3a3a44;
+  color: #6EBFD6;
 }
 @media (min-width: 480px) /* Tablet & Desktop */ {
   .header h1 {
@@ -707,18 +630,18 @@ a.big.button {
   font-weight: bold;
   font-size: 1.1em;
   background: transparent;
-  border: solid 3px #2badad;
+  border: solid 3px #33AACC;
   -webkit-border-radius: 30px;
   border-radius: 30px;
   font-family: montserrat, sans-serif;
 }
 a.big.button,
 a.big.button:visited {
-  color: #2badad;
+  color: #33AACC;
   text-decoration: none;
 }
 a.big.button:hover {
-  background: #2badad;
+  background: #33AACC;
 }
 a.big.button:hover,
 a.big.button:hover:visited {
@@ -788,10 +711,10 @@ a.big.button:hover:visited {
 }
 .menu a,
 .menu a:visited {
-  color: #2badad;
+  color: #33AACC;
 }
 .menu a:hover {
-  color: #228a8a;
+  color: #0C87AA;
 }
 .menu a.level-1 {
   font-family: montserrat, sans-serif;
@@ -835,7 +758,7 @@ a.big.button:hover:visited {
   height: 3px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  background: #2badad;
+  background: #33AACC;
 }
 code .string,
 code .number {
